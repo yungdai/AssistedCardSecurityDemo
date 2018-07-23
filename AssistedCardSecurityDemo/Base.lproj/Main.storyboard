@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController definesPresentationContext="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="AssistedCardSecurityDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qen-LV-aZ7">
+                                <rect key="frame" x="20" y="100" width="1326" height="904"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agent Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drq-tN-LPU">
+                                        <rect key="frame" x="520" y="422" width="286.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.79991227389999997" green="0.80005055670000003" blue="0.79990351199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="drq-tN-LPU" firstAttribute="centerX" secondItem="qen-LV-aZ7" secondAttribute="centerX" id="Dl1-6K-1YR"/>
+                                    <constraint firstItem="drq-tN-LPU" firstAttribute="centerY" secondItem="qen-LV-aZ7" secondAttribute="centerY" id="lm4-1k-EH5"/>
+                                </constraints>
+                            </view>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tOa-1c-TsI">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MxU-vl-vcm">
+                                    <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nkj-lg-ll0">
+                                            <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="mqb-yt-8cN">
+                                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwF-VX-mBq">
+                                <rect key="frame" x="20" y="28" width="203" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Pass to Client">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="popOverCustomerVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GpL-lx-RLj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68233841660000005" green="0.04837813228" blue="0.1049260274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PwF-VX-mBq" secondAttribute="trailing" symbolic="YES" id="0oV-6a-VUK"/>
+                            <constraint firstItem="tOa-1c-TsI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8Z5-NQ-xpc"/>
+                            <constraint firstItem="qen-LV-aZ7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Fmr-iS-WfS"/>
+                            <constraint firstItem="qen-LV-aZ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UkA-3l-fya"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qen-LV-aZ7" secondAttribute="trailing" constant="20" id="Yep-nR-7ew"/>
+                            <constraint firstItem="tOa-1c-TsI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="abk-y5-H4P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qen-LV-aZ7" secondAttribute="bottom" constant="20" id="dcZ-BK-K6R"/>
+                            <constraint firstItem="tOa-1c-TsI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fKm-wf-0pi"/>
+                            <constraint firstItem="tOa-1c-TsI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gIQ-La-6pK"/>
+                            <constraint firstItem="PwF-VX-mBq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="pwz-If-8Iw"/>
+                            <constraint firstItem="PwF-VX-mBq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rxj-qH-cWr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tOa-1c-TsI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="agentView" destination="qen-LV-aZ7" id="avy-C9-fLg"/>
+                        <outlet property="blurView" destination="tOa-1c-TsI" id="G7l-NF-qZe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.48169838945827" y="133.59375"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="kuh-gD-W1X">
+            <objects>
+                <viewController storyboardIdentifier="clientVC" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IOm-Ay-vm1" customClass="SecondViewController" customModule="AssistedCardSecurityDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hio-cV-DwG">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emf-o1-kxK">
+                                <rect key="frame" x="400" y="20" width="946" height="984"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iys-kO-x10">
+                                        <rect key="frame" x="20" y="20" width="192" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Back to Agent">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelCustomerVC:" destination="IOm-Ay-vm1" eventType="touchUpInside" id="AC4-WV-YIc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Iys-kO-x10" firstAttribute="leading" secondItem="emf-o1-kxK" secondAttribute="leading" constant="20" id="04P-Yk-EOs"/>
+                                    <constraint firstItem="Iys-kO-x10" firstAttribute="top" secondItem="emf-o1-kxK" secondAttribute="top" constant="20" id="zCS-Mq-Uwu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tiv-QN-U7S">
+                                <rect key="frame" x="541.5" y="492" width="283" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DXm-j7-bj9" firstAttribute="trailing" secondItem="emf-o1-kxK" secondAttribute="trailing" constant="20" id="7Pv-YD-Xrk"/>
+                            <constraint firstItem="Tiv-QN-U7S" firstAttribute="centerX" secondItem="DXm-j7-bj9" secondAttribute="centerX" id="9EO-yQ-OL8"/>
+                            <constraint firstItem="emf-o1-kxK" firstAttribute="leading" secondItem="DXm-j7-bj9" secondAttribute="leading" constant="400" id="Nks-XT-Skk"/>
+                            <constraint firstItem="Tiv-QN-U7S" firstAttribute="centerY" secondItem="DXm-j7-bj9" secondAttribute="centerY" id="QEg-XD-Mg3"/>
+                            <constraint firstItem="DXm-j7-bj9" firstAttribute="bottom" secondItem="emf-o1-kxK" secondAttribute="bottom" constant="20" id="hZC-j6-Woe"/>
+                            <constraint firstItem="emf-o1-kxK" firstAttribute="top" secondItem="hio-cV-DwG" secondAttribute="top" constant="20" id="w2N-mK-NvI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DXm-j7-bj9"/>
+                    </view>
+                    <connections>
+                        <outlet property="appView" destination="emf-o1-kxK" id="OFe-8y-YDE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLL-4t-RuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792" y="134"/>
+        </scene>
+    </scenes>
+</document>
